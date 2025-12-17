@@ -1,0 +1,62 @@
+/* General Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout Styles */
+body {
+    background: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    background: #b22222;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 5px solid #ffd700;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.animated-feature {
+    animation: fade-bird 3s infinite alternate;
+}
+
+.bird-animation {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+footer {
+    background: #000000;
+    color: #fff;
+    padding: 1rem;
+    border-top: 5px solid #b22222;
+}
+
+/* Keyframe Animation */
+@keyframes fade-bird {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
